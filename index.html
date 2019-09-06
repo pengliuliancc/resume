@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pengliuliancc</title>
+	 <!-- 加载动画css文件 -->
+	<link rel="stylesheet" type="text/css" href="css/loding.css">
+	<!-- 主页面css文件 -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <script src="https://at.alicdn.com/t/font_548995_g7ry9wuf3z5jnhfr.js"></script>
+  <script src="https://at.alicdn.com/t/font_809215_6wfk10udb19.js"></script>
+  
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -1.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+	<div id="welcome" class="active">
+		<div class="loading"></div>
+	</div>
+	<header>
+		<div id="topNavBar" class="topNavBar offset">
+			<div class="topNavBar-inner">
+				<a  class="logo" href="#" alt="logo">pengliuliancc</a>
+				<nav>
+					<ul id="menu" class="clearfix">
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#siteWorks">PORTFOLIO</a></li>
+						<!-- <li> <a href="#messages">Messages</a> </li> -->
+						<li><a href="https://github.com/pengliuliancc" target="_blank">GitHub</a> </li>
+						
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="banner">
+      		<div class="mask"></div>
+    	</div>
+	</header>
+	
+	<div class="content">
+		<section data-x id="about" class="offset">
+			<div class="userCard"> 
+				<div class="userCard-inner clearfix">
+					 <div class="picture"></div>
+					 <div class="text clearfix">
+					 	<div class="profile-preword">
+					 		<span class="welcome">Hello
+								<span class="triangle"></span>
+					 		</span>
+
+					 	</div>
+					 	<div class="brief">
+					 		<h1>彭柳莲</h1>
+					 		<p>Web前端</p>
+					 	</div>
+					 	<hr>
+					 	<dl>
+					 		<dt>年龄</dt>
+					 		<dd>22</dd>
+					 		<dt>性别</dt>
+					 		<dd>女</dd>
+					 		<dt>所在城市</dt>
+					 		<dd>广州</dd>
+					 		<dt>邮箱</dt>
+					 		<dd>pengliulian@foxmail.com</dd>
+					 		<dt>手机</dt>
+					 		<dd>153 6392 4286</dd>
+					 	</dl>
+					 </div>
+				</div>
+				<footer class="media">
+				
+              
+					<a href="https://github.com/pengliuliancc" target="_blank"">
+						<svg class="icon" aria-hidden="true" style="width:26px;height:26px;vertical-align: -1.05em;">
+							<use xlink:href="#icon-github"></use>
+						</svg>	
+					</a>
+					
+				</footer>
+			</div>
+			<p class="downloadResume-wrapper">
+				<a class="downloadResume" href="pll-resume.pdf" target="_blank" download="Web前端-彭柳莲">下载 PDF 简历</a>
+			</p>
+		</section>
+		<section data-x id="skills" class="offset">
+			<h2>技能</h2>
+			<div class="skills-inner">
+				<ol>
+					<li data-name='HTML'>
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-html"></use>
+						</svg>
+					<li data-name='CSS'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-css"></use>
+            </svg>
+          </li>
+          <li data-name='JavaScript'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-javascript"></use>
+            </svg>
+          </li>
+         
+          
+         
+          <li data-name='jQuery'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-jquery"></use>
+            </svg>
+          </li>
+      
+          <li data-name='移动端开发'>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-mobile"></use>
+            </svg>
+          </li>
+          
+          
+				</ol>
+				<div class="detail">
+					<h3></h3>
+					<p></p>
+				</div>
+
+
+
+			</div>
+		</section>
+
+        <section data-x class="portfolio"  id="siteWorks">
+    <h2>作品集</h2>
+    <nav>
+      <ol class="clearfix">
+        <li id="portfolio1">所有</li>
+        <li id="portfolio2">框架</li>
+        <li id="portfolio3">原生JS&amp;CSS</li>
+      </ol>
+      <div id="portfolioBar" class="bar state-1">
+        <div class="bar-inner"></div>
+      </div>
+    </nav>
+    <script>
+      portfolio1.onclick= function(){
+        portfolioBar.className = 'bar state-1'
+      }
+      portfolio2.onclick= function(){
+        portfolioBar.className = 'bar state-2'
+      }
+      portfolio3.onclick= function(){
+        portfolioBar.className = 'bar state-3'
+      }
+    </script>
+
+
+    <div class="works" style="height: 597px;">
+      <div class="big" style="top: 0; left: 0;">
+        <img src="images/1.jpg" alt="作品1">
+      </div>
+      <div class="small" style="top: 0; left: 645px;">
+        <img src="images/2.jpg" alt="作品2">
+      </div>
+      <div class="small" style="top: 312px; left: 645px;">
+        <img src="images/3.jpg" alt="作品3">
+      </div>
+    </div>
+
+  </section>
+
+
+
+	</div>
+
+<footer class="footer">
+    Made by Pengliulian
+  </footer>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.7.2/dist/av-min.js"></script>
+<!-- 模块化 -->
+<script src="js/base/View.js"></script>
+<script src="js/base/Model.js"></script>
+<script src="js/base/Controller.js"></script>
+<script src="js/showDetail.js"></script>
+<script src="js/showIntro.js"></script>
+<script src="js/loading.js"></script>
+
+<script src="js/scroll_topNavBar_change.js"></script>
+<script src="js/scroll_section_change.js"></script>
+<script src="js/menuHover.js"></script>
+<script src="js/smoothy-slide.js"></script>
+<script src="js/slides.js"></script>
+
+</html>
